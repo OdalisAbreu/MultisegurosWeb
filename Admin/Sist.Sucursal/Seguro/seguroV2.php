@@ -1018,7 +1018,7 @@ if ($_POST) {
 										<!-- // Group END -->
 
 									</div>
-									<div class="col-md-8">
+									<!-- <div class="col-md-8">
 										<label class="control-label">Categoría *<?= $_GET['tipo_id'] ?></label>
 										<div class="controls">
 											<select name="categoria" id="categoria" style="display:compact" class="form-control">
@@ -1029,11 +1029,11 @@ if ($_POST) {
 											</select>
 
 										</div>
-										<div class="pagination margin-bottom-none">
-											<ul>
-												<input name="acep" type="button" id="acep" value="Siguiente" class="btn btn-primary" onClick="IrPaso2();" tabindex="8" />
-											</ul>
-										</div>
+									</div> -->
+									<div class="pagination margin-bottom-none">
+										<ul>
+											<input name="acep" type="button" id="acep" value="Siguiente" class="btn btn-primary" onClick="IrPaso2();" tabindex="8" />
+										</ul>
 									</div>
 
 
