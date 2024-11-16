@@ -179,37 +179,6 @@ if ($_POST) {
 ?>
 
 <script>
-	// Detectar cambios en el select de categoría
-	/*	document.getElementById("categoria").addEventListener("change", function() {
-			var categoria = this.value; // Obtén el valor seleccionado
-			var aseguradoraSelect = document.getElementById("aseguradora"); // Select de aseguradoras
-
-			// Obtén todas las opciones
-			var opciones = aseguradoraSelect.querySelectorAll("option");
-
-			// Itera sobre las opciones
-			opciones.forEach(function(opcion) {
-				if (opcion.value == "1") {
-					// Si la opción es aseguradora con ID 1
-					if (categoria == "1") {
-						// Si la categoría es "Público", oculta la opción
-						opcion.style.display = "none";
-					} else {
-						// En otras categorías, muestra la opción
-						opcion.style.display = "block";
-					}
-				}
-			});
-
-			// Reinicia la selección si la opción previamente seleccionada ya no está visible
-			if (aseguradoraSelect.value == "1" && categoria == "1") {
-				aseguradoraSelect.value = ""; // Resetear selección
-			}
-		});*/
-</script>
-
-
-<script>
 	//$("#tab2").fadeIn(0);
 	function ImprimirTicket(nombre) {
 		var ficha = document.getElementById(nombre);
@@ -1018,19 +987,19 @@ if ($_POST) {
 										<!-- // Group END -->
 
 									</div>
-									<!-- <div class="col-md-8">
-										<label class="control-label">Categoría *<?= $_GET['tipo_id'] ?></label>
+									<div class="col-md-8">
+										<label class="control-label">Categoria *<?= $_GET['tipo_id'] ?></label>
 										<div class="controls">
-											<select name="categoria" id="categoria" style="display:compact" class="form-control">
+											<select name="marca" id="marca" style="display:compact" class="form-control">
 												<option value="">- Seleccionar - </option>
-												<option value="1">Publico </option>
-												<option value="2">Privado</option>
+												<option value="1">- Seleccionar - </option>
+												<option value="2">- Seleccionar - </option>
 
 											</select>
 
 										</div>
-									</div> -->
-									<div class="pagination margin-bottom-none">
+									</div>
+									<div class="col-md-4 pagination margin-bottom-none">
 										<ul>
 											<input name="acep" type="button" id="acep" value="Siguiente" class="btn btn-primary" onClick="IrPaso2();" tabindex="8" />
 										</ul>
@@ -1208,26 +1177,17 @@ if ($_POST) {
 
 
 													<select name="aseguradora" id="aseguradora" style="font-size: large; color: #09b6e7;" class="form-control">
-
 														<option value="">- Seleccionar -</option>
 														<?php
-														$query = "SELECT id, nombre FROM seguros WHERE activo = 'si' ORDER BY nombre ASC";
-														$result = mysql_query($query);
-														while ($row = mysql_fetch_array($result)) {
-															echo '<option value="' . $row['id'] . '">' . $row['nombre'] . '</option>';
+														$R2 = mysql_query(
+															"SELECT id, nombre, activo from seguros WHERE activo ='si' order by nombre ASC"
+														);
+														while ($C2 = mysql_fetch_array($R2)) {
+															$c_nombre = $C2['nombre'];
+															$c_id = $C2['id'];
+															echo "<option value=\"$c_id\">$c_nombre</option>";
 														}
 														?>
-														<!-- <option value="">- Seleccionar -</option>
-														<?php
-														// $R2 = mysql_query(
-														// 	"SELECT id, nombre, activo from seguros WHERE activo ='si' order by nombre ASC"
-														// );
-														// while ($C2 = mysql_fetch_array($R2)) {
-														// 	$c_nombre = $C2['nombre'];
-														// 	$c_id = $C2['id'];
-														// 	echo "<option value=\"$c_id\">$c_nombre</option>";
-														// }
-														?> -->
 													</select>
 
 
