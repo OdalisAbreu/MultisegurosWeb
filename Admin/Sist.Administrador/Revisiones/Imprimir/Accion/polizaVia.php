@@ -138,7 +138,7 @@ while ($RowHist = mysql_fetch_array($QueryH2)) {
 
 $montoSeguro	= montoSeguro($row['vigencia_poliza'], $RQVehi['veh_tipo']);
 $polizaNum		= GetPrefijo($row['id_aseg']) . "-" . str_pad($row['id_poliza'], 6, "0", STR_PAD_LEFT);
-$dir			= "../../../../../../ws6_3_8/TareasProg/PDF/IMPRIMIR/" . $polizaNum . ".pdf";
+$dir			= "../../../../../../MultisegurosApi/TareasProg/PDF/IMPRIMIR/" . $polizaNum . ".pdf";
 
 $Agent = explode("-", $row['x_id']);
 $Agencia = explode("/", AgenciaVia($Agent[0]));

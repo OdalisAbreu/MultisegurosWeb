@@ -305,7 +305,7 @@ $Agencia = explode("/", AgenciaVia($Agent[0]));
 							</div>
 
 							<?
-							$direct	= $_SERVER['DOCUMENT_ROOT'] . "/ws6_3_8/TareasProg/PDF/IMPRIMIR/" . $polizaNum . ".pdf";
+							$direct	= $_SERVER['DOCUMENT_ROOT'] . "/MultisegurosApi/TareasProg/PDF/IMPRIMIR/" . $polizaNum . ".pdf";
 
 							if (file_exists($direct)) {
 								//echo "si";

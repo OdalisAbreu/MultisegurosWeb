@@ -246,7 +246,7 @@ if ($acc1 == 'Editar') {
 
 											<!--    <a class="btn btn-social-icon btn-info" href="Admin/Sist.Administrador/Reportes/DescargarExcel.php?id=<?= $row['id'] ?>&id_aseg=<?= $row['id_aseg'] ?>&year=<?= $row['year'] ?>&num=<?= $row['num'] ?>&sigla=<?= Sigla($row['id_aseg']) ?>"  data-title="Descargar remesa"><i class="fa fa-cloud-download"></i></a>-->
 
-											<a class="btn btn-social-icon btn-info" href="../ws6_3_8/TareasProg/Excel/ASEGURADORA/REMESAS/<?= $row['id_aseg'] ?>/MS_RDR_<?= $edd[0] ?>.xls" target="_blank" data-title="Descargar remesa"><i class="fa fa-cloud-download"></i></a>
+											<a class="btn btn-social-icon btn-info" href="../MultisegurosApi/TareasProg/Excel/ASEGURADORA/REMESAS/<?= $row['id_aseg'] ?>/MS_RDR_<?= $edd[0] ?>.xls" target="_blank" data-title="Descargar remesa"><i class="fa fa-cloud-download"></i></a>
 
 
 

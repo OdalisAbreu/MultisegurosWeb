@@ -1,4 +1,3 @@
-
 <!--<html>
 <head>
     <script language="JavaScript">
@@ -37,33 +36,35 @@
 </html>-->
 
 <font style="font-weight:bold; text-align:center; margin-bottom:10px; margin-top:15px;">
-	<h2>GENERANDO DOCUMENTO</h2>
-    
+    <h2>GENERANDO DOCUMENTO</h2>
+
 </font>
 
 <div id="manejo" style="width: 175px;
     margin-left: 38%;
     margin-right: 50%;
-    margin-bottom: 33px;"><h4 id="espere">Por favor, espere...</h4></div>	
-    
-    <?
-    
-	
-	$_GET['ruta_id'] = str_replace(" ", "-", $_GET['ruta_id']);
-	
-	if($_GET['ruta_id'] !='1todos'){
-		$rutid = $_GET['ruta_id']; 
-	}
-	
-	$dir 		= $_SERVER['DOCUMENT_ROOT']."/ws6_3_8/TareasProg/PDF/CLIENTES/".$_GET['user_id']."/".$_GET['fecha1'].$rutid.".pdf";
+    margin-bottom: 33px;">
+    <h4 id="espere">Por favor, espere...</h4>
+</div>
+
+<?
+
+
+$_GET['ruta_id'] = str_replace(" ", "-", $_GET['ruta_id']);
+
+if ($_GET['ruta_id'] != '1todos') {
+    $rutid = $_GET['ruta_id'];
+}
+
+$dir         = $_SERVER['DOCUMENT_ROOT'] . "/MultisegurosApi/TareasProg/PDF/CLIENTES/" . $_GET['user_id'] . "/" . $_GET['fecha1'] . $rutid . ".pdf";
 
 if (file_exists($dir)) {
-    ?>
+?>
 
     <a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../../../../ws2/TareasProg/Descargar.php?fecha=<?= $Fech_reg . $rutid ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
     <?
-    } else {
-        if ($_GET['nuevo'] == '1') { ?>
+} else {
+    if ($_GET['nuevo'] == '1') { ?>
 
         <script>
             $(document).ready(function() {
@@ -73,7 +74,7 @@ if (file_exists($dir)) {
         </script>
 
     <? } else {
-            ?>
+    ?>
 
         <script>
             $(document).ready(function() {
