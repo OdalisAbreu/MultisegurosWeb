@@ -9,8 +9,8 @@ include("../../../../../incluidos/fechas.func.php");
 include("nombres.func.php");
 Conectarse();
 
-$directorio = "https://multiseguros.com.do/Seg_V2/images/";
-$logo = "https://multiseguros.com.do/Seg_V2/images/Aseguradora/";
+$directorio = "https://multiseguros.com.do/MultisegurosWeb/images/";
+$logo = "https://multiseguros.com.do/MultisegurosWeb/images/Aseguradora/";
 
 $ancho  = "570";
 $anchoP = "0";
