@@ -1,0 +1,4 @@
+[10-Aug-2015 16:08:26 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Administrador/CxC/listado.php on line 121
+[10-Aug-2015 16:24:22 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Administrador/CxC/listado.php on line 123
+[10-Aug-2015 14:35:20 America/Denver] PHP Fatal error:  Only variables can be passed by reference in /home/seguros1/public_html/Seg_V2/Admin/Sist.Administrador/CxC/listado.php on line 132
+[14-Aug-2015 11:23:18 America/Santo_Domingo] PHP Fatal error:  Call to undefined function ClientePers() in /home/seguros1/public_html/Seg_V2/Admin/Sist.Administrador/CxC/listado.php on line 29

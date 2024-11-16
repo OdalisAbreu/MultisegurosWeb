@@ -1,0 +1,2 @@
+[09-Dec-2014 20:33:31 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg/Admin/Sist.Administrador/Personal/Edit/editar-registar.php on line 16
+[09-Dec-2014 20:52:45 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg/Admin/Sist.Administrador/Personal/Edit/editar-registar.php on line 16

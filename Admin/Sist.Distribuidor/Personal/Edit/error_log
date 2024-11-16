@@ -1,0 +1,4 @@
+[28-Mar-2022 15:35:22 America/Santo_Domingo] PHP Warning:  mysql_query(): MySQL server has gone away in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Personal/Edit/editar-registar.php on line 10
+[28-Mar-2022 15:35:22 America/Santo_Domingo] PHP Warning:  mysql_query(): Error reading result set's header in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Personal/Edit/editar-registar.php on line 10
+[28-Mar-2022 15:35:22 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Personal/Edit/editar-registar.php on line 11
+[28-Mar-2022 15:35:22 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Personal/Edit/editar-registar.php on line 24

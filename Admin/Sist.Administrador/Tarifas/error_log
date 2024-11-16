@@ -1,0 +1,1 @@
+[01-Dec-2014 22:53:59 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg/Admin/Sist.Administrador/Personal/listado.php on line 105

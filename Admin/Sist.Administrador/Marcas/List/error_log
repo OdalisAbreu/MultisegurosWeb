@@ -1,0 +1,1 @@
+[24-Mar-2016 12:48:29 America/Denver] PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE or T_DOLLAR_OPEN_CURLY_BRACES or T_CURLY_OPEN in /home/seguros1/public_html/Seg_V2/Admin/Sist.Administrador/Marcas/List/listado.php on line 128

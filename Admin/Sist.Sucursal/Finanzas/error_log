@@ -1,0 +1,6 @@
+[14-Aug-2015 12:44:44 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Sucursal/Finanzas/recargados.php on line 122
+[18-Aug-2015 22:42:12 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Sucursal/Finanzas/recargados.php on line 123
+[18-Aug-2015 22:58:58 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Sucursal/Finanzas/recargados.php on line 123
+[04-Apr-2016 16:03:48 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Sucursal/Finanzas/recargados.php on line 123
+[04-Apr-2016 16:03:51 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Sucursal/Finanzas/retirados.php on line 109
+[05-Apr-2016 09:39:41 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/seguros1/public_html/Seg_V2/Admin/Sist.Sucursal/Finanzas/retirados.php on line 109

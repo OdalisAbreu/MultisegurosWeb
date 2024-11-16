@@ -1,0 +1,2 @@
+[26-May-2021 09:06:43 America/Santo_Domingo] PHP Warning:  mysql_connect(): Connection timed out in /home/multiseguroscom/public_html/Seg_V2/incluidos/conexion_inc.php on line 16
+[26-May-2021 09:06:43 America/Santo_Domingo] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/incluidos/conexion_inc.php on line 18

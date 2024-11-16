@@ -1,0 +1,12 @@
+[16-Nov-2017 23:59:24 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 85
+[17-Nov-2017 00:00:15 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 85
+[01-Mar-2018 13:32:55 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[09-Mar-2018 14:57:13 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[09-Mar-2018 14:57:20 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[09-Mar-2018 14:57:24 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[10-Mar-2018 18:36:50 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[10-Mar-2018 18:37:16 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[10-Mar-2018 18:37:27 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[10-Mar-2018 18:37:40 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[10-Mar-2018 18:38:40 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92
+[10-Mar-2018 18:38:54 America/Santo_Domingo] PHP Fatal error:  Call to undefined function Supervisor() in /home/multiseguroscom/public_html/Seg_V2/Admin/Sist.Distribuidor/Agencia/List/listado.php on line 92

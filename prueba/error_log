@@ -1,0 +1,2 @@
+[01-Mar-2018 11:59:35 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/prueba/listado_trans.php on line 133
+[01-Mar-2018 12:00:09 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/Seg_V2/prueba/listado_trans.php on line 133
