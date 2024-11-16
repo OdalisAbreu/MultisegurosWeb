@@ -987,8 +987,7 @@ if ($_POST) {
 										<!-- // Group END -->
 
 									</div>
-
-									<div class="col-md-4 pagination margin-bottom-none">
+									<div class="pagination margin-bottom-none">
 										<ul>
 											<input name="acep" type="button" id="acep" value="Siguiente" class="btn btn-primary" onClick="IrPaso2();" tabindex="8" />
 										</ul>
