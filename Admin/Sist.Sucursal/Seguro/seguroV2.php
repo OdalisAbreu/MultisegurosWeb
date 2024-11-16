@@ -41,7 +41,7 @@ if ($_POST) {
 		// para verificar seguro
 		//$xID 	= "WEB-".$_SESSION['user_id'].date('Ymdhis');
 		$url =
-			"https://multiseguros.com.do/ws6_3_8/Seguros/GET_Poliza.php" .
+			"https://multiseguros.com.do/MultisegurosApi/Seguros/GET_Poliza.php" .
 			"?xID=WEB-" .
 			$_SESSION['user_id'] .
 			date('Ymdhis') .
@@ -455,13 +455,13 @@ if ($_POST) {
 		var HayError = false;
 		var fecha1 = $('#fecha_inicio').val();
 		var fechaD = fecha1.split("/");
-		var fechaF = fechaD[2] + "-" + fechaD[1] + "-" + (parseInt(fechaD[0]) +1) ;
-		var fechaH = fecha.getFullYear() + "-" + (fecha.getMonth() +1) + "-" + fecha.getDate();
-		var fechaValida =  fecha.getDate()+ "/" + (fecha.getMonth() +1) + "/" + fecha.getFullYear();
+		var fechaF = fechaD[2] + "-" + fechaD[1] + "-" + (parseInt(fechaD[0]) + 1);
+		var fechaH = fecha.getFullYear() + "-" + (fecha.getMonth() + 1) + "-" + fecha.getDate();
+		var fechaValida = fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear();
 		var fechaActtual = new Date(fechaH);
 		var fechaPoliza = new Date(fechaF);
 
-		if (fechaActtual.getTime()  > fechaPoliza.getTime()) {
+		if (fechaActtual.getTime() > fechaPoliza.getTime()) {
 			$('#error_fecha_ini').fadeIn('9');
 			HayError = true;
 		} else {
@@ -897,13 +897,13 @@ if ($_POST) {
 															CargarAjax2('Admin/Sist.Sucursal/Seguro/Vehiculos/AJAX/Modelos.php?marca_id=' + id + '&tipo=' + model + '', '', 'GET', 'modelo');
 															console.log(model)
 														});
-														$("#tipo").change(
+													$("#tipo").change(
 
-															function() {
-																var id = document.getElementById("marca").value;
-																var model = document.getElementById("tipo").value;
-																CargarAjax2('Admin/Sist.Sucursal/Seguro/Vehiculos/AJAX/Modelos.php?marca_id=' + id + '&tipo=' + model + '', '', 'GET', 'modelo');
-															});
+														function() {
+															var id = document.getElementById("marca").value;
+															var model = document.getElementById("tipo").value;
+															CargarAjax2('Admin/Sist.Sucursal/Seguro/Vehiculos/AJAX/Modelos.php?marca_id=' + id + '&tipo=' + model + '', '', 'GET', 'modelo');
+														});
 												</script>
 											</div>
 											<p class="error help-block" id="errormarca" style="display:none"><span class="label label-important">Por favor seleccione marca</span></p>
@@ -919,10 +919,10 @@ if ($_POST) {
 												<script>
 												CargarAjax2('Admin/Sist.Sucursal/Seguro/Vehiculos/AJAX/Modelos.php?marca_id=" .
 														$v['veh_marca'] .
-														"&tipo=".$cat2['id'].
+														"&tipo=" . $cat2['id'] .
 														"&selec=" .
 														$v['modelo'] .
-														
+
 														"','','GET','modelo');
 												
 												</script>

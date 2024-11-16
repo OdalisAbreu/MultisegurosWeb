@@ -24,7 +24,7 @@ if ($acc1 == 'Editar') {
 		</script> ';
 
 
-	$getWS 	= file_get_contents("https://multiseguros.com.do/ws6_3_8/TareasProg/AwsMailer/ReporteRemesas.php?id=" . $_POST['id'] . "&key=Ed4F45%");
+	$getWS 	= file_get_contents("https://multiseguros.com.do/MultisegurosApi/TareasProg/AwsMailer/ReporteRemesas.php?id=" . $_POST['id'] . "&key=Ed4F45%");
 
 	echo "enviando";
 
