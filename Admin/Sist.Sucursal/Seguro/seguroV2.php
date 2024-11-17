@@ -1210,13 +1210,10 @@ if ($_POST) {
 												<select name="aseguradora" id="aseguradora" style="font-size: large; color: #09b6e7;" class="form-control">
 													<option value="">- Seleccionar -</option>
 													<?php
-													$R2 = mysql_query(
-														"SELECT id, nombre, activo from seguros WHERE activo ='si' order by nombre ASC"
-													);
-													while ($C2 = mysql_fetch_array($R2)) {
-														$c_nombre = $C2['nombre'];
-														$c_id = $C2['id'];
-														echo "<option value=\"$c_id\">$c_nombre</option>";
+													$query = "SELECT id, nombre FROM seguros WHERE activo = 'si' ORDER BY nombre ASC";
+													$result = mysql_query($query);
+													while ($row = mysql_fetch_array($result)) {
+														echo '<option value="' . $row['id'] . '">' . $row['nombre'] . '</option>';
 													}
 													?>
 												</select>
