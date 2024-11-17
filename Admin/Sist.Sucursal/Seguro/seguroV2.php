@@ -991,11 +991,10 @@ if ($_POST) {
 									<div class="col-md-8">
 										<label class="control-label">Categoria *</label>
 										<div class="controls">
-											<select name="categoria" id="categoria" style="display:compact" class="form-control">
-												<option value="">- Seleccionar - </option>
-												<option value="1">Público </option>
+											<select name="categoria" id="categoria" class="form-control">
+												<option value="">- Seleccionar -</option>
+												<option value="1">Público</option>
 												<option value="2">Privado</option>
-
 											</select>
 
 										</div>
@@ -1517,28 +1516,31 @@ if ($_POST) {
 		document.addEventListener("DOMContentLoaded", function() {
 			// Detectar cambios en el select de categoría
 			document.getElementById("categoria").addEventListener("change", function() {
-				var categoria = this.value; // Obtén el valor seleccionado
+				var categoria = this.value; // Obtén el valor seleccionado de la categoría
 				var aseguradoraSelect = document.getElementById("aseguradora"); // Select de aseguradoras
 
-				// Obtén todas las opciones
+				// Obtén todas las opciones del select de aseguradoras
 				var opciones = aseguradoraSelect.querySelectorAll("option");
 
-				// Itera sobre las opciones
+				// Itera sobre las opciones para mostrar u ocultar
 				opciones.forEach(function(opcion) {
-					if (opcion.value == "1") {
-						// Si la opción es aseguradora con ID 1
-						if (categoria == "1") {
+					if (opcion.value === "1") {
+						// Si la opción es la aseguradora con ID 1
+						if (categoria === "1") {
 							// Si la categoría es "Público", oculta la opción
 							opcion.style.display = "none";
 						} else {
 							// En otras categorías, muestra la opción
 							opcion.style.display = "block";
 						}
+					} else {
+						// Muestra las demás opciones
+						opcion.style.display = "block";
 					}
 				});
 
-				// Reinicia la selección si la opción previamente seleccionada ya no está visible
-				if (aseguradoraSelect.value == "1" && categoria == "1") {
+				// Si la opción previamente seleccionada no está visible, resetea el valor
+				if (aseguradoraSelect.value === "1" && categoria === "1") {
 					aseguradoraSelect.value = ""; // Resetear selección
 				}
 			});
