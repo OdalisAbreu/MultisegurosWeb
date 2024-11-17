@@ -548,35 +548,6 @@ if ($_POST) {
 	// para telefono1-- -- -- -- -- -- -- -- >
 </script>
 
-<script>
-	// Detectar cambios en el select de categoría
-	document.getElementById("categoria").addEventListener("change", function() {
-		var categoria = this.value; // Obtén el valor seleccionado
-		var aseguradoraSelect = document.getElementById("aseguradora"); // Select de aseguradoras
-
-		// Obtén todas las opciones
-		var opciones = aseguradoraSelect.querySelectorAll("option");
-
-		// Itera sobre las opciones
-		opciones.forEach(function(opcion) {
-			if (opcion.value == "1") {
-				// Si la opción es aseguradora con ID 1
-				if (categoria == "1") {
-					// Si la categoría es "Público", oculta la opción
-					opcion.style.display = "none";
-				} else {
-					// En otras categorías, muestra la opción
-					opcion.style.display = "block";
-				}
-			}
-		});
-
-		// Reinicia la selección si la opción previamente seleccionada ya no está visible
-		if (aseguradoraSelect.value == "1" && categoria == "1") {
-			aseguradoraSelect.value = ""; // Resetear selección
-		}
-	});
-</script>
 
 <div id="ver">
 	<form action="" method="post" enctype="multipart/form-data" id="form_edit_prof">
@@ -1541,4 +1512,36 @@ if ($_POST) {
 	<script src="js/jquery.bootstrap.wizard.js"></script>
 	<!--<script src="http://multiplesrecargas.com/recharge_Mod_New/common/bootstrap/extend/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js"></script>-->
 	<script src="js/form-wizards.init.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Detectar cambios en el select de categoría
+			document.getElementById("categoria").addEventListener("change", function() {
+				var categoria = this.value; // Obtén el valor seleccionado
+				var aseguradoraSelect = document.getElementById("aseguradora"); // Select de aseguradoras
+
+				// Obtén todas las opciones
+				var opciones = aseguradoraSelect.querySelectorAll("option");
+
+				// Itera sobre las opciones
+				opciones.forEach(function(opcion) {
+					if (opcion.value == "1") {
+						// Si la opción es aseguradora con ID 1
+						if (categoria == "1") {
+							// Si la categoría es "Público", oculta la opción
+							opcion.style.display = "none";
+						} else {
+							// En otras categorías, muestra la opción
+							opcion.style.display = "block";
+						}
+					}
+				});
+
+				// Reinicia la selección si la opción previamente seleccionada ya no está visible
+				if (aseguradoraSelect.value == "1" && categoria == "1") {
+					aseguradoraSelect.value = ""; // Resetear selección
+				}
+			});
+		});
+	</script>
 </div>
