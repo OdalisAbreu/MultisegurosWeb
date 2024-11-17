@@ -999,7 +999,7 @@ if ($_POST) {
 
 										</div>
 									</div>
-									<div class="m-l-15 pagination margin-bottom-none">
+									<div class="pagination margin-bottom-none" style="margin-left: 168px !important; margin-top: 4px !important;">
 										<ul>
 											<input name="acep" type="button" id="acep" value="Siguiente" class="btn btn-primary" onClick="IrPaso2();" tabindex="8" />
 										</ul>
