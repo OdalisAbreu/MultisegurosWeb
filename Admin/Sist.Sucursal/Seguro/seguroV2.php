@@ -991,9 +991,9 @@ if ($_POST) {
 									<div class="col-md-8">
 										<label class="control-label">Categoria *</label>
 										<div class="controls">
-											<select name="marca" id="marca" style="display:compact" class="form-control">
+											<select name="categoria" id="categoria" style="display:compact" class="form-control">
 												<option value="">- Seleccionar - </option>
-												<option value="1">Publico </option>
+												<option value="1">Público </option>
 												<option value="2">Privado</option>
 
 											</select>
