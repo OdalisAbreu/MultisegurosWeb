@@ -988,8 +988,8 @@ if ($_POST) {
 										<!-- // Group END -->
 
 									</div>
-									<div class="col-md-8">
-										<label class="control-label">Categoria *</label>
+									<div class="col-md-4 " style="padding: 0 !important;">
+										<label class=" control-label">Categoria *</label>
 										<div class="controls">
 											<select name="categoria" id="categoria" class="form-control">
 												<option value="">- Seleccionar -</option>
@@ -999,7 +999,7 @@ if ($_POST) {
 
 										</div>
 									</div>
-									<div class="pagination margin-bottom-none">
+									<div class="col-md-12 pagination margin-bottom-none">
 										<ul>
 											<input name="acep" type="button" id="acep" value="Siguiente" class="btn btn-primary" onClick="IrPaso2();" tabindex="8" />
 										</ul>
