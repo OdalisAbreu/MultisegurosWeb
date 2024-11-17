@@ -1513,37 +1513,43 @@ if ($_POST) {
 	<script src="js/form-wizards.init.js"></script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Detectar cambios en el select de categoría
-			document.getElementById("categoria").addEventListener("change", function() {
-				var categoria = this.value; // Obtén el valor seleccionado de la categoría
-				var aseguradoraSelect = document.getElementById("aseguradora"); // Select de aseguradoras
+		// Función para filtrar aseguradoras según la categoría seleccionada
+		function filtrarAseguradoras() {
+			console.log("Filtrando aseguradoras...");
+			var categoria = document.getElementById("categoria").value; // Obtén el valor seleccionado de categoría
+			var aseguradoraSelect = document.getElementById("aseguradora"); // Select de aseguradoras
 
-				// Obtén todas las opciones del select de aseguradoras
-				var opciones = aseguradoraSelect.querySelectorAll("option");
+			// Obtén todas las opciones del select de aseguradoras
+			var opciones = aseguradoraSelect.querySelectorAll("option");
 
-				// Itera sobre las opciones para mostrar u ocultar
-				opciones.forEach(function(opcion) {
-					if (opcion.value === "1") {
-						// Si la opción es la aseguradora con ID 1
-						if (categoria === "1") {
-							// Si la categoría es "Público", oculta la opción
-							opcion.style.display = "none";
-						} else {
-							// En otras categorías, muestra la opción
-							opcion.style.display = "block";
-						}
+			// Itera sobre las opciones y aplica el filtro
+			opciones.forEach(function(opcion) {
+				if (opcion.value === "1") {
+					// Si es la aseguradora con ID 1
+					if (categoria === "1") {
+						// Si la categoría es "Público", oculta la opción
+						opcion.style.display = "none";
 					} else {
-						// Muestra las demás opciones
+						// En otras categorías, muestra la opción
 						opcion.style.display = "block";
 					}
-				});
-
-				// Si la opción previamente seleccionada no está visible, resetea el valor
-				if (aseguradoraSelect.value === "1" && categoria === "1") {
-					aseguradoraSelect.value = ""; // Resetear selección
+				} else {
+					// Siempre muestra las demás opciones
+					opcion.style.display = "block";
 				}
 			});
-		});
+
+			// Si la opción seleccionada no está visible, resetea la selección
+			if (aseguradoraSelect.value === "1" && categoria === "1") {
+				aseguradoraSelect.value = ""; // Resetea el valor seleccionado
+			}
+		}
+
+		// Ejecutar el filtro cada vez que #categoria cambie
+		document.getElementById("categoria").addEventListener("change", filtrarAseguradoras);
+
+		// Ejecutar el filtro al cargar la página (opcional, en caso de que haya valores predeterminados)
+		document.addEventListener("DOMContentLoaded", filtrarAseguradoras);
+	</script>
 	</script>
 </div>
