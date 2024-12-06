@@ -10,4 +10,4 @@ conexion_inc.php
 /Admin/Sist.Dependientes/Reportes/error_log
 /Admin/Sist.Dependientes/Reportes/reportes/Reporte_de_ventas.csv
 /Admin/Sist.Sucursal/Seguro/error_log
-
+Admin/SubirArchivos/cop_*
