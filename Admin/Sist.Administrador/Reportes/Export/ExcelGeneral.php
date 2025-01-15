@@ -3,10 +3,10 @@ ini_set('display_errors', 1);
 $fecha1  =  $_GET['fecha1'];
 $fecha2  =  $_GET['fecha2'];
 
-header("Content-Type: application/vnd.ms-excel");
-header("Expires: 0");
-header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-header("content-disposition: attachment;filename=Reporte desde - " . $fecha1 . " - hasta - " . $fecha2 . ".xls");
+// header("Content-Type: application/vnd.ms-excel");
+// header("Expires: 0");
+// header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+// header("content-disposition: attachment;filename=Reporte desde - " . $fecha1 . " - hasta - " . $fecha2 . ".xls");
 
 
 session_start();
