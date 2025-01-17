@@ -27,6 +27,6 @@ if ($_SESSION["funcion_id"] == '3' && $_SESSION["tipo_conex"] == 'WEB') { ?>
     </ul>
     <!-- /.nav-second-level -->
   </li>
-  <li><a href="#" onClick="CargarAjax2('Admin/Sist.Sucursal/Pagos/Cardnet.php','','GET','cargaajax');"><i class="fa fa-tag fa-fw"></i> Pagos </a></li>
+  <li><a href="#" onClick="CargarAjax2('Admin/Sist.Sucursal/Seguros/Pagos/Cardnet.php','','GET','cargaajax');"><i class="fa fa-tag fa-fw"></i> Pagos </a></li>
 
 <? } ?>
