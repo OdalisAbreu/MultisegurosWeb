@@ -124,13 +124,14 @@ if ($_POST) {
 				
 				
 				'; ?>
-
+			<table style="width: 50%; margin-top: 25px; margin-left: 25%;">
+				<tr>
+					<td align="center"><a href="javascript:void(0)" class="btn btn-success" onClick="CargarAjax2('Admin/Sist.Sucursal/Seguro/Imprimir_Poliza.php?id_trans=<?= $respuesta[2] ?>','','GET','ver');"><b>Pago con Tarjeta</b></a></td>
+				</tr>
+			</table>
 			<table style="width: 50%;
     margin-top: 25px;
     margin-left: 25%;">
-				<tr>
-					<td align="right"><a href="javascript:void(0)" class="btn btn-success" onClick="CargarAjax2('Admin/Sist.Sucursal/Seguro/Imprimir_Poliza.php?id_trans=<?= $respuesta[2] ?>','','GET','ver');"><b>Pago con Tarjeta</b></a></td>
-				</tr>
 				<tr>
 					<td align="right"><a href="javascript:void(0)" class="btn btn-success" onClick="CargarAjax2('Admin/Sist.Sucursal/Seguro/ticket.php?id=<?= $respuesta[2] ?>','','GET','ver');"><b>Imprimir Ticket</b></a>
 
