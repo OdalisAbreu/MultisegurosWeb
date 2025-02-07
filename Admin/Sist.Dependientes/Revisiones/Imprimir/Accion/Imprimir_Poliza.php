@@ -281,7 +281,7 @@ $Agencia = explode("/", AgenciaVia($Agent[0]));
     font-weight: bold;
     font-size: 17px; " valign="top">
 			<td align="center">
-				<font style="font-size:13px"> Servicio al Cliente 5</font>
+				<font style="font-size:13px"> Servicio al Cliente</font>
 				<!--	<img src="https://multiseguros.com.do/Seg_V2/images/VIA/4.jpg" height="37" />
 					<br> +1 809 200 1842 -->
 			</td>
