@@ -311,7 +311,7 @@ $Agencia = explode("/", AgenciaVia($Agent[0]));
 								//echo "si";
 							?>
 								<script>
-									//	$('#manejo').fadeOut(0);
+									$('#manejo').fadeOut(0);
 								</script>
 								<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('Admin/Sist.Administrador/Revisiones/Imprimir/Accion/Imprimir.php?polizaNum=<?= $polizaNum ?>');"><b>Descargar Poliza</b></a>
 							<?
