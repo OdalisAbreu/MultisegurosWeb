@@ -304,15 +304,15 @@ $Agencia = explode("/", AgenciaVia($Agent[0]));
 								<h4 id="espere">Por favor, espere...</h4>
 							</div>
 
-							<script>
-								$('#manejo').fadeOut(0);
-							</script>
 							<?
 							$direct	= $_SERVER['DOCUMENT_ROOT'] . "/ws6_3_8/TareasProg/PDF/IMPRIMIR/" . $polizaNum . ".pdf";
 
 							if (file_exists($direct)) {
 								//echo "si";
 							?>
+								<script>
+									//	$('#manejo').fadeOut(0);
+								</script>
 								<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('Admin/Sist.Administrador/Revisiones/Imprimir/Accion/Imprimir.php?polizaNum=<?= $polizaNum ?>');"><b>Descargar Poliza</b></a>
 							<?
 								//exit();
