@@ -33,8 +33,8 @@ if ($_SESSION["funcion_id"] == '1') { ?>
 
 
     <?
-    // print_r($_SESSION);
-    if ($_SESSION["nombre_conetado"] == 'Administrador ') {
+    //print_r($_SESSION);
+    if ($_SESSION["user_id"] == '6') {
     ?>
 
         <li>
