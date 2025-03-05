@@ -187,11 +187,10 @@ if ($_SESSION["funcion_id"] == '1') { ?>
 
 
 
-    <? } // cierra opciones de administrador 
-    ?>
 
-    <a href="https://multiseguros.com.do/SegurosChat/Inic.php?op=P/Administrador" type="button" class="btn btn-primary" style="margin-left:55px; margin-top: 50px;">
-        Ir a SegurosChat
-    </a>
-
-<? } ?>
+        <a href="https://multiseguros.com.do/SegurosChat/Inic.php?op=P/Administrador" type="button" class="btn btn-primary" style="margin-left:55px; margin-top: 50px;">
+            Ir a SegurosChat
+        </a>
+<? } // cierra opciones de administrador 
+}
+?>
