@@ -33,7 +33,7 @@ if ($_SESSION["funcion_id"] == '1') { ?>
 
 
     <?
-
+    echo $_SESSION["id"];
     if ($_SESSION["id"] == '6') {
     ?>
 
