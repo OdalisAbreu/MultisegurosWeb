@@ -83,15 +83,15 @@ if ($_GET['fecha2']) {
 
 							<? if ($_GET['consul']) { ?>
 
-								<a href="#" onClick="CargarAjax_win('Admin/Sist.Dependientes/Reportes/GenerarPeticion.php?fecha1=<?= $_GET['fecha1'] ?>&fecha2=<?= $_GET['fecha2'] ?>&ruta_id=<?= $_GET['ruta_id'] ?>&user_id=<?= $_SESSION['dist_id'] ?>','','GET','cargaajax');">
+								<!-- <a href="#" onClick="CargarAjax_win('Admin/Sist.Dependientes/Reportes/GenerarPeticion.php?fecha1=<?= $_GET['fecha1'] ?>&fecha2=<?= $_GET['fecha2'] ?>&ruta_id=<?= $_GET['ruta_id'] ?>&user_id=<?= $_SESSION['dist_id'] ?>','','GET','cargaajax');">
 									<button type="button" id="descargar" class="btn btn-danger" style="margin-left:10px; margin-left:15px; margin-left:5px;">
 										Generar Descargar
 									</button>
-								</a>
+								</a> -->
 
 								<a href="#" onClick="CargarAjax_win('Admin/Sist.Dependientes/Reportes/GenerarPeticion.php?fecha1=<?= $_GET['fecha1'] ?>&fecha2=<?= $_GET['fecha2'] ?>&ruta_id=<?= $_GET['ruta_id'] ?>&user_id=<?= $_SESSION['dist_id'] ?>&nuevo=1','','GET','cargaajax');">
 									<button type="button" id="descargar2" class="btn btn-danger" style="margin-left:10px; margin-left:15px; margin-left:5px;">
-										Generar Descargar Nuevo
+										Generar Descargar
 									</button>
 								</a>
 								<a href="#" onClick="CargarAjax_win('Admin/Sist.Dependientes/Reportes/GenerarCSV.php?fecha1=<?= $_GET['fecha1'] ?>&fecha2=<?= $_GET['fecha2'] ?>&ruta_id=<?= $_GET['ruta_id'] ?>&user_id=<?= $_SESSION['dist_id'] ?>&nuevo=1','','GET','cargaajax');">
